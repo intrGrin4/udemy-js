@@ -13,36 +13,36 @@ str.length - и получить её длину)
 
 4) Потренироваться и переписать цикл еще двумя способами*/
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
-let counter = 1;
+// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+// let counter = 1;
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
 
-for (let i = 0; i < counter; i++) {
-    const a = prompt('Один из последних просмотренных фильмов?', '');
-    const b = prompt('На сколько оцените его?', '');
+// for (let i = 0; i < counter; i++) {
+//     const a = prompt('Один из последних просмотренных фильмов?', '');
+//     const b = prompt('На сколько оцените его?', '');
 
-    if (a != null && b != null && a != '' && b != '' && a.length >= 50) {
-        personalMovieDB.movies[a] = b;
-    }
-    i--;
-};
-if (personalMovieDB.count < 10) {
-    alert("Просмотрено довольно мало фильмов");
-}
-else if (personalMovieDB.count > 10 && personalMovieDB.count <= 30) {
-    alert("Вы классический зритель");
-}
-else if (personalMovieDB.count > 30) {
-    alert("Вы киноман");
-}
-else {
-    alert("Произошла ошибка");
-}
-console.log(personalMovieDB);
+//     if (a != null && b != null && a != '' && b != '' && a.length >= 50) {
+//         personalMovieDB.movies[a] = b;
+//     }
+//     i--;
+// };
+// if (personalMovieDB.count < 10) {
+//     alert("Просмотрено довольно мало фильмов");
+// }
+// else if (personalMovieDB.count > 10 && personalMovieDB.count <= 30) {
+//     alert("Вы классический зритель");
+// }
+// else if (personalMovieDB.count > 30) {
+//     alert("Вы киноман");
+// }
+// else {
+//     alert("Произошла ошибка");
+// }
+// console.log(personalMovieDB);
